@@ -1,13 +1,12 @@
-title: Your awesome title
+title: ent3r
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: ent3r
+  email: ent3r [at] corax [dot] team
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is my site. It's a bullshit site, not to be taken seriously.
+  There will be rants on this page, deal with it.
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -16,8 +15,8 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
+    twitter: ent3r_
+    github:  ent3r
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
@@ -31,7 +30,8 @@ minima:
     # telegram: jekyll
     # googleplus: +jekyll
     # microdotblog: jekyll
-    # keybase: jekyll
+    keybase: nikolaitaco
+    reddit: ent3r_
 
     # Mastodon instances
     # mastodon:
