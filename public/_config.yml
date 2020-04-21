@@ -9,11 +9,18 @@ description: > # this means to ignore newlines until "show_excerpts:"
 baseurl: ""
 url: https://ent3r.tk
 
+permalink: /:collection/:slug
+
 collections:
   blog:
     output: true
-    permalink: /:collection/:name
-    collections_dir: /_posts/blog
+    permalink: /:collection/:slug
+    collections_dir: /blogposts
+  rant:
+    output: true
+    permalink: /:collection/:slug
+    collections_dir: /rants
+
 
 markdown: kramdown
 plugins:
