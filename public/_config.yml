@@ -6,13 +6,28 @@ description: > # this means to ignore newlines until "show_excerpts:"
   This is my site. It's a bullshit site, not to be taken seriously.
   There will be rants on this page, deal with it.
 
+baseurl: ""
+url: https://ent3r.tk
+
+collections:
+  blog:
+    output: true
+    permalink: /:collection/:name
+    collections_dir: /_posts/blog
+
+markdown: kramdown
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-sitemap
+
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+# refer to https://shopify.github.io/liquid/filters/date/
+# if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
-
   # generate social links in footer
   social_links:
     twitter: ent3r_
@@ -54,8 +69,3 @@ minima:
 
 # Build settings
 #theme: minima
-
-plugins:
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-sitemap
