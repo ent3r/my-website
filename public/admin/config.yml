@@ -2,7 +2,8 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-site_url: https://ent3r.tk
+#site_url: https://ent3r.tk
+
 publish_mode: editorial_workflow
 media_folder: assets/uploads
 public_folder: /assets/uploads
