@@ -21,12 +21,11 @@ collections:
     permalink: /:collection/:slug
     collections_dir: /rants
 
-
 markdown: kramdown
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
@@ -38,7 +37,7 @@ minima:
   # generate social links in footer
   social_links:
     twitter: ent3r_
-    github:  ent3r
+    github: ent3r
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
@@ -54,21 +53,18 @@ minima:
     # microdotblog: jekyll
     keybase: nikolaitaco
     reddit: ent3r_
-
     # Mastodon instances
     # mastodon:
     # - username: jekyll
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
-
     # GitLab instances
     # gitlab:
     # - username: jekyll
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
-
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
