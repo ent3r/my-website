@@ -80,6 +80,7 @@ collections:
             }
           - {
               label: "Header pages",
+              label_singular: "Header page",
               name: "header_pages",
               widget: "list",
               field: { name: tag, label: Tag, widget: string },
