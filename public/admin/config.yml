@@ -8,7 +8,6 @@ publish_mode: editorial_workflow
 media_folder: public/assets/uploads
 public_folder: /assets/uploads
 
-
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
 
@@ -20,11 +19,16 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
 
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
 
     editor:
       preview: false
@@ -39,11 +43,46 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
 
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
 
+    editor:
+      preview: false
+
+  - name: "settings" # Used in routes, e.g., /admin/collections/blog
+
+    label: "Settings" # Used in the UI
+    label_singular: "setting"
+
+    create: false # Allow users to create new documents in this collection
+    delete: false
+    files:
+      - name: "general"
+        label: "General settings"
+        file: public/_config.yml
+        fields: # The fields for each document, usually in front matter
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+          - {
+              label: "Show excerpts",
+              name: "show_excerpts",
+              widget: "boolean",
+              default: true,
+            }
+          - {
+              label: "Tags",
+              name: "tags",
+              widget: "list",
+              field: { name: tag, label: Tag, widget: string },
+            }
     editor:
       preview: false

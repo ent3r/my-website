@@ -9,16 +9,16 @@ description: > # this means to ignore newlines until "show_excerpts:"
 baseurl: ""
 url: https://ent3r.tk
 
-permalink: /:collection/:slug
+permalink: /:collection/:title
 
 collections:
   blog:
     output: true
-    permalink: /:collection/:slug
+    permalink: /:collection/:title
     collections_dir: /blogposts
   rant:
     output: true
-    permalink: /:collection/:slug
+    permalink: /:collection/:title
     collections_dir: /rants
 
 markdown: kramdown
@@ -67,8 +67,6 @@ minima:
     #   instance: example.com
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
+header_pages: ["about.md"]
 # Build settings
 #theme: minima
