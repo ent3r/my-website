@@ -79,8 +79,8 @@ collections:
               default: true,
             }
           - {
-              label: "Tags",
-              name: "tags",
+              label: "Header pages",
+              name: "header_pages",
               widget: "list",
               field: { name: tag, label: Tag, widget: string },
             }
